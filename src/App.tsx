@@ -12,7 +12,7 @@ import AdminDashboardLayout from './components/AdminDashboardLayout'
 import Login from './Pages/Login'
 import AdminLogin from './Pages/AdminLogin'
 import AdminDashboard from './Pages/AdminDashboard'
-import Signup from './Pages/Signup'
+import Signup from './Pages/SignUp'
 import DashboardHome from './Pages/DashboardHome'
 import FileConverterPage from './Pages/FileConverter'
 
