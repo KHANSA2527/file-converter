@@ -462,7 +462,10 @@ const UserDashboard = () => {
 
   if (!mounted) return <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-orange-50" />;
 
-  if (!isAuthenticated || !user) return <HeroSection />;
+  if (!isAuthenticated || !user) return <HeroSection
+        scrollToTools={() => { /* scroll logic */ }}
+        openSignup={() => { /* signup logic */ }}
+      />;
 
   const userName = user.email?.split("@")[0] || "User";
   const displayName = user.user_metadata?.full_name || userName;
@@ -494,6 +497,15 @@ const UserDashboard = () => {
     }
   }
 };
+const pulseAnimation : any = {
+  scale: [1, 1.05, 1],
+  transition: {
+    duration: 1,
+    repeat: Infinity,
+    ease: "easeInOut"
+  }
+};
+
 
   
   return (

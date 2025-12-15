@@ -2,7 +2,17 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+type HeaderProps = {
+  scrollToTools: () => void;
+  scrollToFeatures: () => void;
+  openSignup: () => void;
+};
+
+export default function Header({
+  scrollToTools,
+  scrollToFeatures,
+  openSignup,
+}: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

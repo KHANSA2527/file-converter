@@ -6,6 +6,7 @@ export interface PDFTool {
   category: string;
   color: string;
   popular?: boolean;
+  accept?: string;
 }
 
 export const categories = [

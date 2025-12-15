@@ -361,7 +361,7 @@ export default function FileConverterSection() {
       {showSignup && <SignupModal onClose={() => setShowSignup(false)} />}
 
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float-slow {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-10px); }

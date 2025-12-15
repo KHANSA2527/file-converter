@@ -7,7 +7,7 @@ interface HeroSectionProps {
   openSignup: () => void
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ scrollToTools, openSignup }) => {
+const HeroSection: React.FC<HeroSectionProps> = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [timeSaved, setTimeSaved] = useState(0)
   const [activeProcesses, setActiveProcesses] = useState(0)

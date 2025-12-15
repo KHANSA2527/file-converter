@@ -141,7 +141,7 @@ const Footer = () => {
         {/* BOTTOM */}
         <div className="mt-16 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-gray-400">
           <p className="text-sm flex items-center gap-1">
-            © 2025 PDFMaster — Crafted with
+            © 2025 PDFMaster — Crafted with Khansa Khan
             <Heart size={14} className="text-red-500" /> for the web.
           </p>
 

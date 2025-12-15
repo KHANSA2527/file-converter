@@ -3,7 +3,7 @@ import { convertDocxToPdf } from "../Services/fileConversion";
 function FileUpload() {
   const handleUpload = async (e) => {
     const file = e.target.files[0];
-    const res = await convertDocxToPdf(file);
+    const res : any = await convertDocxToPdf(file);
 
     const blob = await res.blob();
     const url = window.URL.createObjectURL(blob);
